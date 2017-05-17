@@ -1,0 +1,7 @@
+{% extends "weather/header.html" %}
+
+{% block content %}
+	{% for register in object_list %}
+		<h5><a href= "/blog/{{register.id}}"> {{register.Username}}></a></h5>
+	{% endfor %}
+{% endblock %}

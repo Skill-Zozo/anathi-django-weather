@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Byte Orbit</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'weather/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div class="container-fluid" style="min-height:95%; ">
+		<div class="row">
+			  <div class="col-sm-2">
+				  <br>
+				  <center>
+					<img src="{% static 'weather/img/profile.jpg' %}" class="responsive-img" style='max-height:100px;' alt="face">
+				  </center>
+			  </div>
+			  <div class="col-sm-10">
+				  <br>
+				  <h1>Weather Forecast</h1>
+				  <p>You came to the right place to view weather</p>
+			  </div>
+		</div><hr>
+
+		<div class="row">
+		  <div class="col-md-6 col-md-offset-4">
+			<pre>{"__type":"TwentyFour.Services.Weather.Objects.CurrentOneReport, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","Observations":[{"__type":"TwentyFour.Services.Weather.Objects.Observation, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","CityName":"Cape Town","Location":"Cape Town International Airport","Sky":"Clear","Temperature":"16.00","Humidity":"48","WindSpeed":"6","WindDirectionAbreviated":"N","Comfort":"16","DewPoint":"5","Description":"Clear. Refreshingly cool.","Icon":"13","IconName":"night_clear","Cached":false},{"__type":"TwentyFour.Services.Weather.Objects.Observation, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","CityName":"George Airport","Location":"George Airport","Sky":"","Temperature":"16.00","Humidity":"55","WindSpeed":"7","WindDirectionAbreviated":"N","Comfort":"16","DewPoint":"7","Description":"Refreshingly cool.","Icon":"cw_no_report_icon","IconName":"cw_no_report_icon","Cached":false},{"__type":"TwentyFour.Services.Weather.Objects.Observation, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","CityName":"Port Elizabeth Airport","Location":"Port Elizabeth Airport","Sky":"Clear","Temperature":"18.00","Humidity":"88","WindSpeed":"22","WindDirectionAbreviated":"E","Comfort":"18","DewPoint":"16","Description":"Clear. Mild.","Icon":"13","IconName":"night_clear","Cached":false},{"__type":"TwentyFour.Services.Weather.Objects.Observation, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","CityName":"Upington Airport","Location":"Upington Airport","Sky":"","Temperature":"15.00","Humidity":"51","WindSpeed":"9","WindDirectionAbreviated":"N","Comfort":"15","DewPoint":"5","Description":"Refreshingly cool.","Icon":"cw_no_report_icon","IconName":"cw_no_report_icon","Cached":false},{"__type":"TwentyFour.Services.Weather.Objects.Observation, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","CityName":"Kimberley Airport","Location":"Kimberley Airport","Sky":"","Temperature":"7.00","Humidity":"71","WindSpeed":"","WindDirectionAbreviated":"","Comfort":"","DewPoint":"2","Description":"Quite cool.","Icon":"cw_no_report_icon","IconName":"cw_no_report_icon","Cached":false},{"__type":"TwentyFour.Services.Weather.Objects.Observation, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","CityName":"East London","Location":"East London","Sky":"Passing clouds","Temperature":"17.00","Humidity":"100","WindSpeed":"6","WindDirectionAbreviated":"N","Comfort":"17","DewPoint":"17","Description":"Passing clouds. Mild.","Icon":"14","IconName":"night_mostly_clear","Cached":false},{"__type":"TwentyFour.Services.Weather.Objects.Observation, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","CityName":"Bloemfontein Airport","Location":"Bloemfontein Airport","Sky":"","Temperature":"13.00","Humidity":"41","WindSpeed":"11","WindDirectionAbreviated":"SW","Comfort":"12","DewPoint":"0","Description":"Refreshingly cool.","Icon":"cw_no_report_icon","IconName":"cw_no_report_icon","Cached":false}],"FirstObservation":{"__type":"TwentyFour.Services.Weather.Objects.Observation, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","CityName":"Cape Town","Location":"Cape Town International Airport","Sky":"Clear","Temperature":"16.00","Humidity":"48","WindSpeed":"6","WindDirectionAbreviated":"N","Comfort":"16","DewPoint":"5","Description":"Clear. Refreshingly cool.","Icon":"13","IconName":"night_clear","Cached":false},"Location":{"__type":"TwentyFour.Services.Weather.Objects.Location, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","City":"77107","CityName":"Cape Town","Forecasts":[{"__type":"TwentyFour.Services.Weather.Objects.Forecast, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","DaySequence":1,"Segment":null,"DaySegment":null,"DayOfWeek":3,"WeekDay":"Tuesday","ShortWeekDay":"Tue","Date":new Date(Date.UTC(2017,4,15,22,0,0,0)),"FormattedDate":"Tue, May 16","DayLight":"D","SkyDescriptor":"1","Sky":"Sunny","PrecipitationDescriptor":"","Precipitation":"","TemperatureDescriptor":"8","TemperatureDescription":"Mild","HighTemp":"19","LowTemp":"13","UV":"Low","AirDescription":"29","Air":"Comfortable","Description":"Sunny. Mild.","Temperature":null,"WindSpeed":"14","Beaufort":"3","BeaufortDescriptor":"Gentle breeze","WindDirection":"271","WindDirectionAbreviated":"W","WindDirectionDescription":"West","DewPoint":"13","Humidity":"72","Comfort":"18","Visibility":null,"Rainfall":"*","Snowfall":"*","PrecipitationProbability":"0","Icon":"1","IconName":"sunny","Cached":false}],"Cached":false},"Forecast":{"__type":"TwentyFour.Services.Weather.Objects.Forecast, TwentyFour.Services.Weather, Version=1.2.0.0, Culture=neutral, PublicKeyToken=null","DaySequence":1,"Segment":null,"DaySegment":null,"DayOfWeek":3,"WeekDay":"Tuesday","ShortWeekDay":"Tue","Date":new Date(Date.UTC(2017,4,15,22,0,0,0)),"FormattedDate":"Tue, May 16","DayLight":"D","SkyDescriptor":"1","Sky":"Sunny","PrecipitationDescriptor":"","Precipitation":"","TemperatureDescriptor":"8","TemperatureDescription":"Mild","HighTemp":"19","LowTemp":"13","UV":"Low","AirDescription":"29","Air":"Comfortable","Description":"Sunny. Mild.","Temperature":null,"WindSpeed":"14","Beaufort":"3","BeaufortDescriptor":"Gentle breeze","WindDirection":"271","WindDirectionAbreviated":"W","WindDirectionDescription":"West","DewPoint":"13","Humidity":"72","Comfort":"18","Visibility":null,"Rainfall":"*","Snowfall":"*","PrecipitationProbability":"0","Icon":"1","IconName":"sunny","Cached":false},"AstronomyReport":null,"MarineReport":null,"LocalTime":"Mon, 15 May 2017 22:09:47 SAST","LocalUpdateTime":"Mon, 15 May 2017 21:42:09 SAST","CountryName":"South Africa","TimeZone":"2","Cached":false}
+			</pre>
+		  </div> <!--col-sm-2-->
+		</div> 
+	</div>
+	<footer>
+		<div class="container-fluid" style='margin-left:15px'>
+			<button type="button" class="btn btn-warning" onclick="location.href='/logout'">Log Out</button>
+		</div>
+	</footer>	
+	
+</body>
+
+</html>

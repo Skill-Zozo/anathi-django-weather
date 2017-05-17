@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Byte Orbit</title>
+	<meta charset="utf-8" />
+	{% load staticfiles %}
+	<link rel="stylesheet" href="{% static 'weather/css/bootstrap.min.css' %}" type = "text/css"/>
+	<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	
+	<style type="text/css">
+		html,
+		body {
+		  height:100%
+		}
+	</style>
+</head>
+
+<body class="body" style="background-color:#f6f6f6">
+	<div class="container-fluid" style="min-height:95%; ">
+		<div class="row">
+			  <div class="col-sm-2">
+				  <br>
+				  <center>
+					<img src="{% static 'weather/img/profile.jpg' %}" class="responsive-img" style='max-height:100px;' alt="face">
+				  </center>
+			  </div>
+			  <div class="col-sm-10">
+				  <br>
+				  <h1>Weather Forecast</h1>
+			  </div>
+		</div><hr>
+
+		<div class="row">
+		  <div class="col-md-6 col-md-offset-4"><br>
+			<form action="/login/"  method="post">
+				<div class="input-group">
+					{% csrf_token %}
+					{{ form }}
+				</div>
+				<br>
+				<div class="list-inline col-md-offset-3">
+					<button type="button" class="btn btn-primary" onclick="location.href='/signup'">Sign Up</button>
+					<button type="submit" class="btn btn-primary" >Log In</button>
+				</div>
+			</form>
+		  </div> <!--col-sm-2-->
+		</div>
+	</div>
+	<footer>
+		<div class="container-fluid" style='margin-left:15px'>
+			
+		</div>
+	</footer>	
+	
+</body>
+
+</html>
